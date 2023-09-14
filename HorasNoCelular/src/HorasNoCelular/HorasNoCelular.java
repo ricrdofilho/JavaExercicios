@@ -5,16 +5,14 @@ public class HorasNoCelular {
 
     public static void main(String[] args) {
         
-        String strngNome, strngCostume, strngInput;
-        float fltDiasDoAno,fltDiasNoAno, fltDiasDaSemana;
+        String strngNome, strngInput;
+        float fltCostume, fltDiasDoAno,fltDiasNoAno, fltDiasDaSemana;
         float fltHorasDeUso, fltHorasTotalSemana, fltHorasTotalMes, fltHorasTotal;
         
         strngNome = JOptionPane.showInputDialog("Ola, qual o seu nome? ");
-        strngCostume = JOptionPane.showInputDialog(strngNome + ", voce costuma usar o celular todos os dias da semana?");
+        fltCostume = JOptionPane.showConfirmDialog(null,strngNome+", voce costuma usar o celular todos os dias da semana?", "Dias da Semana" ,JOptionPane.YES_NO_OPTION);
         
-        if (strngCostume.equalsIgnoreCase("Não") || 
-            strngCostume.equalsIgnoreCase("n") || 
-            strngCostume.equalsIgnoreCase("nao")) {
+        if (fltCostume == JOptionPane.NO_OPTION) {
             strngInput = JOptionPane.showInputDialog("Quantos dias da semana voce usa o celular?");
             fltDiasDaSemana = Float.parseFloat(strngInput);
             fltDiasDoAno = fltDiasDaSemana*52;
