@@ -76,7 +76,7 @@ public class EstudioTattoo {
                         
                         if (strEstiloTattoo.equals("")){
                             JOptionPane.showMessageDialog(null,strInformacao);
-                            intPronto = JOptionPane.showConfirmDialog(null,"Agora voce esta pronto para escolher o estilo que gostaria de tatuar?", "Verificaçao Pronto", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);    
+                            intPronto = JOptionPane.showConfirmDialog(null,"Agora voce esta pronto para escolher o estilo que gostaria de tatuar?", "Está prontro?", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);    
                         }
                     }
                 } 
