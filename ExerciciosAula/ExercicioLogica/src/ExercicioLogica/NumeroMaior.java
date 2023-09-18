@@ -15,13 +15,12 @@ public class NumeroMaior {
         N2 = input.nextDouble();
         
         if (N1>N2) {
-            System.out.println(N1+" é o maior numero");
+            System.out.println(N1+" e o maior numero");
         }
         if (N1<N2) {
-            System.out.println(N2+" é o maior numero");
+            System.out.println(N2+" e o maior numero");
         } else {
-            System.out.println("Os numeros são iguais");
-        }
-        
+            System.out.println("Os numeros sao iguais");
+        }    
     }
 }
